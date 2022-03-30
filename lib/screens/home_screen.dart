@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sandy/widgets/category_selector.dart';
 
 class HomesScreen extends StatefulWidget {
   const HomesScreen({Key? key}) : super(key: key);
@@ -39,10 +40,17 @@ class _HomesScreenState extends State<HomesScreen> {
         // the App.build method, and use it to set our appbar title.
         title: const Text(
           'SANDY',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+//          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {},
+          ),
+        ],
+        elevation: 0,
       ),
-      body: Center(
+      /* body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -71,7 +79,13 @@ class _HomesScreenState extends State<HomesScreen> {
             ),
           ],
         ),
-      ),
+      ), */
+      body: Center(
+          child: Column(
+        children: const [
+          CategorySelector(),
+        ],
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
