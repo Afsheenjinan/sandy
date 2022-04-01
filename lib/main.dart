@@ -22,9 +22,10 @@ class MyApp extends StatelessWidget {
             // or simply save your changes to "hot reload" in a Flutter IDE).
             // Notice that the counter didn't reset back to zero; the application
             // is not restarted.
+            backgroundColor: Colors.red,
             colorScheme: ColorScheme.fromSwatch().copyWith(
                 primary: Colors.red,
-                secondary: const Color.fromARGB(255, 212, 202, 174))),
+                secondary: const Color.fromARGB(255, 255, 244, 209))),
         home: const HomesScreen()
         // home: const MyHomePage(title: 'Flutter Demo Home Page'),
         );

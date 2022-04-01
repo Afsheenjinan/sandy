@@ -69,28 +69,28 @@ User albus = User(
   profilepic: 'assets/profile/08.jpg',
 );
 
-List<User> favourite = [greg, john, ann, harry, james];
+List<User> favourites = [greg, john, ann, harry, james];
 
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
   Message(
     sender: james,
     date: '5:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Hey, how did you do today?',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: albus,
     date: '4:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Hey, how\'s it going? What did you do today? whazap in town',
     isLiked: false,
     unread: true,
   ),
   Message(
     sender: john,
     date: '3:30 PM',
-    text: 'Hey, how\'s it going? What did you do today?',
+    text: 'Hey, how\'s it going? What did you do today? What did you do today?',
     isLiked: false,
     unread: false,
   ),
