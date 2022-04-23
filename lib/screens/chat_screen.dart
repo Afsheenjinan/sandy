@@ -91,30 +91,31 @@ class _ChatScreenState extends State<ChatScreen> {
 
   _buildMessageComposer() {
     return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-        height: 50,
-        color: Colors.amber.shade50,
-        child: Row(
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.photo),
-              color: Theme.of(context).colorScheme.primary,
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      height: 50,
+      color: Colors.amber.shade50,
+      child: Row(
+        children: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.photo),
+            color: Theme.of(context).colorScheme.primary,
+          ),
+          Expanded(
+            child: TextField(
+              onChanged: (value) {},
+              textCapitalization: TextCapitalization.sentences,
+              decoration:
+                  const InputDecoration.collapsed(hintText: "Send a Message"),
             ),
-            Expanded(
-              child: TextField(
-                onChanged: (value) {},
-                textCapitalization: TextCapitalization.sentences,
-                decoration:
-                    const InputDecoration.collapsed(hintText: "Send a Message"),
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.send_rounded),
-              color: Theme.of(context).colorScheme.primary,
-            )
-          ],
-        ));
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.send_rounded),
+            color: Theme.of(context).colorScheme.primary,
+          )
+        ],
+      ),
+    );
   }
 }
