@@ -27,8 +27,6 @@ class _HomesScreenState extends State<HomesScreen> {
             icon: const Icon(Icons.menu),
             onPressed: () {},
           ),
-          // Here we take the value from the MyHomePage object that was created by
-          // the App.build method, and use it to set our appbar title.
           title: const Text(
             'SANDY',
             //          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -85,6 +83,10 @@ class _HomesScreenState extends State<HomesScreen> {
                 ),
                 child: Column(
                   children: const [
+                    CircularProgressIndicator(),
+                    LinearProgressIndicator(
+                        backgroundColor: Colors.transparent,
+                        color: Colors.grey),
                     Favourites(),
                     RecentChats(),
                   ],
